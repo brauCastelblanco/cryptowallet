@@ -9,10 +9,10 @@ import plotly.graph_objects as go
 pd.set_option('display.float_format', '{:.11f}'.format)
 
 
-currencies = pd.read_csv('data/currencies.csv')
-raw_balance = pd.read_csv('data/balance.csv')
-transactions_history = pd.read_csv('data/transactions_history.csv')
-with open('readme.md') as f:
+currencies = pd.read_csv('.data/currencies.csv')
+raw_balance = pd.read_csv('.data/balance.csv')
+transactions_history = pd.read_csv('.data/transactions_history.csv')
+with open('.readme.md') as f:
     readme = f.read()
 currencies['timestamp'] = pd.to_datetime(currencies['timestamp'],format='%Y-%m-%d')
 currencies['month'] = currencies['timestamp'].dt.strftime('%Y-%m')
