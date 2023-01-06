@@ -3,7 +3,7 @@ The  main goal of this project is to create an easy way to visualize my cryptopo
 
 *Disclaimer* This project has no relation or partnership with the company cryptomkt.com, it justs happens to be where I have my wallets.
 ### How does it work?
-First, the information is extracted through the cryptomkt api (see documentation here: https://api.exchange.cryptomkt.com/), the extraction code is available in this repository as cryptomkt_api.ipynb.
+First, the information is extracted through the cryptomkt api (see documentation here: https://api.exchange.cryptomkt.com/), the extraction code is available in this repository as cryptomktETL.ipynb.
 The API gets two different datasets from two different endpoints: 
 - GET /api/3/public/price/history : Returns quotation prices history.
 - GET /api/3/wallet/balance : Returns the user's wallet balances except zero balances
